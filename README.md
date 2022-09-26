@@ -1,2 +1,4 @@
+samlekum
+
 # cobasaja
 //saya 

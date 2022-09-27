@@ -10,17 +10,7 @@
 </head>
 
 <body>
-    <?php
-    if (isset($_GET['pesan'])) {
 
-    ?>
-
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Login Gagal</strong> <?php echo $_GET['pesan']; ?>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    <?php }
-    ?>
     <div id="card">
         <div id="card-content">
             <div id="card-title">
@@ -31,12 +21,12 @@
                 <label for="email" style="padding-top: 13px">&nbsp;
                     email
                 </label>
-                <input id="email" class="form-content" type="email" name="email" autocomplete="on" required />
+                <input id="email" class="form-content" type="email" name="email"  autocomplete="on" required />
                 <div class="form-border"></div>
 
                 <label for="user-password" style="padding-top: 22px">&nbsp; Password
                 </label>
-                <input id="user-password" class="form-content" type="password" name="password" required />
+                <input id="user-password" class="form-content" type="password" name="password"  required />
                 <div class="form-border"></div>
 
                 <a href="#">
@@ -46,7 +36,7 @@
                 <button id="submit-btn" class="btn" type="submit" name="btnLogin" value="LOGIN">
                     LOGIN
                 </button>
-                <div class="text-center">
+                <div class="text-center mt-3">
                     Belum punya akun? silahkan <a href="daftar.php" id="signup">Daftar</a>
                 </div>
             </form>

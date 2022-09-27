@@ -3,6 +3,12 @@ include 'koneksi.php';
 
 error_reporting(0);
 
+session_start();
+
+if(isset($_SESSION['email'])) {
+    header('location: login.php');
+}
+
 if (isset($_POST['btnDaftar'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
@@ -51,7 +57,6 @@ if (isset($_POST['btnDaftar'])) {
         <div id="card-content">
             <div id="card-title">
                 <h2>DAFTAR</h2>
-
             </div>
             <form action="" method="post" class="form">
                 <label for="username" style="padding-top: 13px">&nbsp;
@@ -83,9 +88,10 @@ if (isset($_POST['btnDaftar'])) {
                     DAFTAR
                 </button>
 
-                <div class="lg text-center">
+                <div class="text-center">
                     Sudah punya akun? klik <a href="login.php" id="signup">disini</a>
                 </div>
+
             </form>
 
         </div>

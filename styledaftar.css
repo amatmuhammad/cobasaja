@@ -40,6 +40,32 @@ label{
 h2{
     text-align: center;
 }
+
+.form{
+    align-items: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content{
+    background: #fbfbfb;
+    border: 1mm;
+    outline: none;
+    padding-top: 14px;
+}
+
+.form-border{
+    height: 1px;
+    width: 100%;
+    background: -webkit-linear-gradient(right,#3498db,#9b59b6);
+}
+
+.lg{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 100000px;
+    font-size: 10pt
+}
 #signup{
     color: #16a085;
     font-family: courier;
@@ -64,20 +90,5 @@ h2{
 #submit-btn:hover{
     box-shadow: 0px 1px 8px #ffffff;
 }
-.form{
-    align-items: 1px;
-    display: flex;
-    flex-direction: column;
-}
-.form-border{
-    height: 1px;
-    width: 100%;
-    background: -webkit-linear-gradient(right,#3498db,#9b59b6);
-}
-.form-content{
-    background: #fbfbfb;
-    border: 1mm;
-    outline: none;
-    padding-top: 14px;
-}
+
 

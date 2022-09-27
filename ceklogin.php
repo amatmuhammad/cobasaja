@@ -1,28 +1,32 @@
 <?php
 include 'koneksi.php';
 
-if (isset($_POST['btnLogin'])){
+session_start();
+
+if (isset($_POST['btnLogin'])) {
     $email = $_POST['email'];
-    $password = md5($_POST['password']) ;
+    $password = md5($_POST['password']);
 
-    $query=mysqli_query($konek,"SELECT * FROM tb_user WHERE username='$email'");
-    $data=mysqli_fetch_array($query);
+    $sql = mysqli_query($konek, "SELECT * FROM tb_user where email = '$email'") ;
+    $hitung = mysqli_num_rows($sql);
+    $pw = mysqli_fetch_array($sql);
+    $pwsekarang = $pw ['password'];
 
-
-    if (mysqli_num_rows($query)==1) {
-        if (password_verify($password, $data['password'])){
-            //login valid
-            session_start();
-            $_SESSION['email']=$data['email'];
-            header('location: Home.php');
-        } else {
-            //password salah;
-            header('location:login.php?pesan=Password Salah');
+    if ($hitung>0) {
+        if(password_verify($password,$pwsekarang)){
+            header ('Location : Home.php');
+        }else {
+             echo "<script>alert('password salah');
+             window.location.href = 'login.php';
+             </script>";
         }
 
-    }else {
-        //Username salah;
-        header('location:login.php?pesan=Email Salah');
+    } else {
+       echo "
+       <script>
+        alert ('registrasi gagal');
+        window.location.href = 'daftar.php';
+       </script>
+       ";
     }
 }
-?>

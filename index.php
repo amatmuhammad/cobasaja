@@ -38,8 +38,8 @@
         <div class="col-md text-center">
           <h1 style="color: #696969;"><strong>MEDCHECKER</strong></h1>
           <div class="d-grid gap-2 col-6 mx-auto">
-            <a href="tabel.php">
-              <button class="btn btn-outline-dark" type="button" href="login.php">Yuk Masuk</button>
+            <a href="Login.php">
+              <button class="btn btn-outline-secondary" type="button" >Login or Sig in</button>
             </a>
           </div>
         </div>

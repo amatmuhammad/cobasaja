@@ -12,8 +12,8 @@ if(isset($_SESSION['email'])) {
 if (isset($_POST['btnDaftar'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = md5($_POST['password']);
-    $cpassword = md5($_POST['cpassword']);
+    $password = ($_POST['password']);
+    $cpassword = ($_POST['cpassword']);
 
     if ($password = $cpassword) {
         $sql = "SELECT * FROM tb_user where email = '$email'";

@@ -12,9 +12,9 @@
             <div class="logo"><a href='assets/img/logo.png'>MedChecker</a></div>
             <div class="menu">
                 <ul>
-                    <li><a href="Home.html">Beranda</a></li>
-                    <li><a href="obat.html">Obat A-Z</a></li>
-                    <li><a href="interaksi.html">Interaksi Obat</a></li>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Obat A-Z</a></li>
+                    <li><a href="#">Interaksi Obat</a></li>
                     <li><div class="search-bar">
                         <form class="search-form d-flex align-items-center" method="POST" action="#">
                           <input type="text" class="searching" name="query" placeholder="Search" title="Enter search keyword">

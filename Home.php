@@ -34,21 +34,10 @@ include 'koneksi.php';
                         <a href="Home.php">Beranda</a>
                     </li>
                     <li>
-                        <a href="obat.html">Obat A-Z</a>
+                        <a href="obat.php">Obat A-Z</a>
                     </li>
                     <li>
-                        <a href="interaksi.html">Interaksi Obat</a>
-                    </li>
-                    <li>
-                        <div class="search-bar">
-                            <form class="search-form d-flex align-items-center" method="POST" action="#">
-                                <input type="text" class="searching" name="query" placeholder="Search" title="Enter search keyword">
-                                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-                            </form>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="login.php" class="tbl-biru">Masuk</a>
+                        <a href="#">Interaksi Obat</a>
                     </li>
                     <li>
                         <a href="logout.php" class="tbl-biru">Keluar</a>
@@ -67,12 +56,12 @@ include 'koneksi.php';
             <form method="get" action="">
                 <div class="search-box-action">
                     <label>
-                        <span class="search-box-label-placeholder">Bahan Obat</span>
-                        <input type="text" id="livesearch" class="livesearch" name='searchterm' placeholder='Cari bahan obat' aria-describedby='hint-interactions-search'>
+                        <span class="search-box-label-placeholder">Obat</span>
+                        <input type="text" id="livesearch" class="livesearch" name='searchterm' placeholder='Ketikan nama obat' aria-describedby='hint-interactions-search'>
                     </label>
-                    <input class="ddc-btn" type="submit" value="Tambah">
+                    <input class="ddc-btn" type="submit" value="Cari">
                 </div>
-                <span id='hint-interactions-search' class='ddc-form-hint noprint'>Silahkan mengetik nama bahan obat yang ingin dicari</span>
+                <span id='hint-interactions-search' class='ddc-form-hint noprint'>Silahkan ketik nama bahan obat </span>
             </form>
         </div>
 

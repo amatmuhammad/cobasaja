@@ -15,14 +15,14 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark " style = "background-color: #e9e4e8;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><strong style="color: #696969 ;">MEDCHECKER</strong> </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="main.php" style="color: rgb(75, 75, 75);">Beranda</a>
+              <!-- <a class="nav-link active" aria-current="page" href="main.php" style="color: rgb(75, 75, 75);">Beranda</a> -->
             </li>
             
           </ul>
@@ -39,12 +39,12 @@
           <h1 style="color: #696969;"><strong>MEDCHECKER</strong></h1>
           <div class="d-grid gap-2 col-6 mx-auto">
             <a href="Login.php">
-              <button class="btn btn-outline-secondary" type="button" >Login or Sig in</button>
+              <button class="btn btn-outline-secondary" type="button" >Login</button>
             </a>
           </div>
         </div>
         <div class="col-md ">
-          <img src="assets/img/images1.jpg" alt="GAMBAR" width="100%" style="margin-top: 20px;">
+          <img src="assets/img/images1.jpg" alt="GAMBAR" width="100%" style="margin-top: 75px;">
         </div>
       </div>
     </div>

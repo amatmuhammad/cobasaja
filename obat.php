@@ -51,7 +51,7 @@ include 'koneksi.php';
                 
                 <form action="" method="post">
                     <div class="input-group mt-3">
-                        <input type="text" name=keyword class="form-control" value="<?=$_POST['keyword']?> " placeholder="Masukan bahan obat " >
+                        <input type="text" name="keyword" class="form-control" value="<?=$_POST['keyword']?> " placeholder="Masukan bahan obat " >
                         <div class="input-group-append">
                             <button type="submit" name="cari" class="btn btn-secondary pl-4 pr-4">Cari</button>
                         </div>
@@ -135,7 +135,7 @@ include 'koneksi.php';
                 ?>
                 
             </tbody>
-            </table>
+        </table>
         </div>
     </div>
 
